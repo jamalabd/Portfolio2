@@ -8,12 +8,14 @@ body, html {
 }
 
 body {
-    border: 11px solid #1f1c1c;
-    height: 1000px;
+    border: 10px solid #333;
+    height: 1500px;
     overflow: auto;
     position: static;
     display: block;
     margin: 8px;
+    margin-top: 2px;
+    background-color: white /*#6b00ff*/;
 }
 
 .container {
@@ -24,47 +26,170 @@ body {
   height: 100%;
   padding: 0;
 }
+nav{
+  padding:0px!important;
+}
 
 .navbar{
-
   position: fixed;
   top: 0px;
-  right:10px;
-  left: 10px;
+  right: 17px;
+  left:  17px;
   z-index: 999;
   box-shadow:  0px 3px 6px -1px black;
 }
 
+.grey{
+  background-color:grey;
+}
+
+
+
 .nav-link {
-  position:relative;
+  /* position:relative; */
+  padding: 12px 60px 12px 60px !important;
+
+}
+.nav-item {
+  margin-right: 70px;
+  margin-left:  70px;
+  font-size: 15px;
 }
 
 .nav-link:hover:before{
   display:block;
   content:"";
   position:absolute;
-  bottom: -8px;
+  bottom: -1px;
   left:0;
   width:0;
   height:4px;
-  background:black;
+  background:#404041;
   transition: width .5s ease-out;
 }
 
 .nav-link:hover:before{
   width:100%;
 }
+#picture {
+  /* position: absolute; */
+  display: block;
+  width: 200px;
+  height: 200px;
+  margin-bottom: 20px;
+  border: 3px solid #404041;
+  border-radius: 15%;
+}
 #home{
   display: flex;
-  background-image: url('../resources/alexandru-acea.jpg');
+  background-image: url('../resources/img/julian-o-hayon-257567-unsplash.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 50%;
+  height: 45%;
 }
-#home h1,h3{
-  color: #00808080;
+#head {
+    font-family: monospace;
+    color: #fff;
+    margin: auto;
+    padding: 35px;
+    font-size: 40px;
+    text-align: center;
+}
+#bar {
+    box-shadow:  0px 3px 6px -1px black;
+    text-align: center;
+    width: 750px;
+    height: 25px;
+    background-color: #404041;
+    margin: 0 auto;
+    font-family: monospace;
+    padding: auto;
+    float: none;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+
+}
+#red {
+    background-color: #FF554E;
+    border-radius: 100%;
+    width: 12px;
+    height: 12px;
+    margin: 0 auto;
+    left: -46.8%;
+    bottom: -23%;
+    position:relative;
+}
+#yellow {
+    background-color: #FFC12E;
+    border-radius: 100%;
+    width: 12px;
+    height: 12px;
+    margin: 0 auto;
+    left: -44%;
+    bottom: 26%;
+    position:relative;
+    display: block;
+}
+#green {
+    background-color: #2ACB42;
+    border-radius: 100%;
+    width: 12px;
+    height: 12px;
+    margin: 0 auto;
+    left: -41%;
+    bottom: 73%;
+    position:relative;
+    display: block;
+}
+#screen {
+    box-shadow:  0px 3px 6px -1px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #a9a9a9bf;
+    width: 748px;
+    height: 150px;
+    border-bottom-left-radius: 2%;
+    border-bottom-right-radius: 2%;
+    margin: 0 auto;
+    padding: 1px;
+}
+
+.font {
+    color: #fff;
+    font-family: monospace;
+    font-size: 15px;
+    text-align: left;
+    position: static;
+}
+.typewriter {
+  font-family: monospace;
+  letter-spacing: .15em;
+  margin-left: 0 auto;
+  margin: 0 auto;
+  overflow: auto;
+  white-space: nowrap;
+  border-right: 3px solid black;
+  animation:
+  typing 4s steps(35, end),
+  blinking-cursor .5s step-end infinite;
+}
+
+
+@keyframes blinking-cursor {
+from, to { border-color: transparent }
+50% { border-color: black }
+}
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+hr{
+  position: absolute;
+  background: red;
+  width: 40%;
 }

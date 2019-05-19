@@ -2,15 +2,16 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-sale=1">
+    <!-- Style Links -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
-    <meta name="viewport" content="width=device-width, initial-sale=1">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <title>Jamal Abdul-Majid</title>
   </head>
   <body>
-    <!-- Navigation Bar -->
-    <div class="container-1">
+    <div class="container-1" role="navigation">
+      <!-- Navigation Bar -->
       <header>
         <nav class="navbar navbar-expand-sm navbar-light bg-light">
             <button class="navbar-toggler" data-toggle="collapse" data-target="#navMenu">
@@ -22,16 +23,18 @@
                 <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
                 <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
                 <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                <li class="nav-item"><a href="#" Download="" class="nav-link resumeLink">Resume<svg width="32" height="32" xmlns="http://www.w3.org/2000/svg">
+                <rect fill="none" id="canvas_background" height="402" width="582" y="-1" x="-1"/>
+                <path fill="#1f1c1c" id="inbox-download" d="m16,15.9308l-3.25,-3.25l-0.75,0.75l4.5,4.5l4.5,-4.5l-0.75,-0.75l-3.25,3.25l0,-11l-1,0l0,11l0,0l0,0zm5,2l6.77502,0l0,0l-4.375,-7l-5.40002,0l0,-1l6,0l5,8l0,1l0,8l-25,0l0,-9l5,-8l6,0l0,1l-5.40002,0l-4.375,7l6.77502,0l0,2c0,1.10457 0.89586,2 1.99739,2l5.00522,0c1.10313,0 1.99739,-0.88773 1.99739,-2l0,-2l0,0z"/>
+              </svg></a></li>
               </ul>
-
             </div>
         </nav>
-
       </header>
-      <!-- Home/About Me -->
-
-      <section id="home">
-
+      <!-- End of Navigation Bar -->
+      <!-- Home Section -->
+      <section id="home" role="Home section">
+      <!-- Dumy Terminal -->
         <div class="console">
           <div id="bar">
             <div id="red">
@@ -43,25 +46,30 @@
           </div>
             <div id="screen">
               <div class="typewriter">
-                <h2 class="font">Softwere development is more then just a career it's my passion!</h2>
+                <h2 class="typewriterText size1">Softwere development is more then just a career it's my passion!</h2>
+                <h2 class="typewriterText size2">Welcome to my Sight!</h2>
               </div>
             </div>
-
+            <!-- End of Dumy Terminal -->
         </div>
-
+      <!-- End of Home Section -->
       </section>
-      <section id="aboutMe">
+      <!-- About Me Section -->
+      <section id="aboutMe" role="About me section">
         <header>
-          <h1>Who am I...</h1>
+          <h1>Who Am I...</h1>
         </header>
-        <h4> Hey! My name is Jamal and i'm proud to be a sefl taught Front End Devloper.</h4>
-      <p>The day I created my first “Hello World”  in the console of my first app , I was hooked . That day I knew I had finally found my passion. Software development has never been "just a job" for me it became apart of my identity. development provides me with the unique opportunity to constantly engage in new challenges forcing me to grow as a individual and allow me to refine my new skills everyday. Bellow you’ll find projects I’ve completed that showcase my skills and general background in developing software. </p>
+        <h4>My name is Jamal and i'm proud to be a self taught Front End Developer.</h4>
+      <p>The day I created my first “Hello World”  in the console of my first app, I was hooked. That day I knew I had finally found my passion. Software development has never been "just a job" for me it became apart of my identity. Development provides me with the unique opportunity to constantly engage in new challenges forcing me to grow as a individual and allow me to refine my new skills everyday. Below you’ll find projects I’ve completed that showcase my skills and general background in developing software. </p>
       </section>
-      <section id="skills">
+      <!-- End of About Me Section -->
+      <!-- Skills Section -->
+      <section id="skills" role="Skills section">
         <div class="container">
           <header>
             <h1>Skills</h1>
           </header>
+          <!-- List of Skills -->
           <div class="row">
             <div class="col-sm-3 col">
               <h5><i class="fab fa-html5 fa-3x"></i>
@@ -113,16 +121,20 @@
                 Problem Solver
               </h5>
             </div>
+            <!-- End of Skills List -->
           </div>
-          <hr>
         </div>
       </section>
-      <section id="projects">
+      <!-- End of Skills Section -->
+      <!-- Project Section -->
+      <section id="projects" role="Projects section">
         <div class="wrapper">
           <header>
             <h1>Projects</h1>
           </header>
+          <!-- Css Grid Wrapper -->
           <div class="grid-wrapper">
+          <!-- Projects -->
               <div class="pr project1">
                 <div class="popup p1">
                   <h2>Project</h2>
@@ -160,48 +172,39 @@
                 </div>
               </div>
           </div>
+          <!-- End of Css Grid Wrapper -->
         </div>
       </section>
-      <section id="contact">
-        <h1>Lets creat something amazing</h1>
+      <!-- End of Projects Section -->
+      <!-- Contacts Section -->
+      <section id="contact" role="Contact section">
+        <h1>Lets create something amazing</h1>
         <h5>"The strength of the team is each individual member. The strength of each member is the team." – Phil Jackson</h5>
+        <!-- Social Links -->
         <a class="social linkedin" target="_blank" href="https://www.linkedin.com/in/jamal-abdul-majid-0ab9ab177/">
           <img src="./resources/img/2481054-48.png" alt="">
         </a>
         <a class="social github" target="_blank" href="https://github.com/jamalabd">
           <img src="./resources/img/2481061-48.png" alt="">
         </a>
+        <!-- Contact Form -->
         <div class="info">
-          <form class="formContact" action="index.js" method="get">
+          <form class="formContact" action="index.js" method="get" role="form">
             <input class="forms" type="email" name="email" id="email" placeholder="Email" value="">
             <input class="forms" type="text" name="name" id="name" placeholder="Name" value="">
             <input class="forms" type="tel" name="phone" id="phone" placeholder="Phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" value="">
             <textarea class="forms" name="message" rows="8" cols="80" placeholder="Message"></textarea>
-            <button  class="forms resume" type="button" name="resume" id="resume" >Download Resume</button>
+            <button  class="forms resume" type="button" name="resume" id="resume"><a href="#" Download="">Download Resume</a></button>
             <button class="forms" type="submit" name="submit" id="submit-btn">Submit</button>
           </form>
         </div>
       </section>
+      <!-- End of Contact Section -->
       <footer>
         <h6>Copywrite Jamal Abdul-Majid 2019</h6>
       </footer>
-
     </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <!-- JavaScript Links -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>

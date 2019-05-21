@@ -29,6 +29,9 @@ body {
 nav{
   padding:0px!important;
 }
+.navbar-light .navbar-toggler-icon{
+
+}
 .navbar{
   position: fixed;
   top: 0px;
@@ -61,11 +64,6 @@ nav{
 }
 .nav-link:hover:before{
   width:100%;
-}
-svg{
-  position: absolute;
-  bottom: 10px;
-  right: 110px;
 }
  /* Home Section */
 #home{
@@ -439,10 +437,38 @@ footer{
     border: 0;
   }
   /* Navigation Bar */
+  div.hamburger-wrapper{
+    display: inline-block;
+    position: relative;
+  }
+  #navbar-toggler.navbar-toggler{
+    height: 40px;
+    width: 40px;
+    border: none;
+    padding: 5px !important;
+  }
+  button.navbar-toggler:hover{
+    background-color: #f8f9fa !important;
+  }
+  .line{
+    width: 80%;
+    height: 3px;
+    background-color: black;
+    position: absolute;
+  }
+  .top{
+    top: 46%;
+  }
+  .middle{
+    top: 15%;
+  }
+  .bottom{
+    bottom: 13%;
+  }
   .navbar{
     top: 0px;
     right: 0px;
-    left:  0px;
+    left: 0px;
   }
   .navbar-toggler:focus{
     outline: none;
@@ -455,8 +481,8 @@ footer{
   a.nav-link{
     padding: 20px;
   }
-  svg{
-      right: 100px;
+  .nav-link:hover {
+    color: white !important;
   }
   /* Home Section */
   #bar{

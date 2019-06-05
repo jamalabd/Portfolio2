@@ -51,6 +51,10 @@ nav{
   margin-left: 50px;
   font-size: 15px;
 }
+.nav-item.mobile{
+  display: none;
+  position: absolute;
+}
 .nav-link:hover:before{
   display:block;
   content:"";
@@ -379,7 +383,6 @@ footer{
   }
   /* Contacts Section */
 
-
   #contact h1 {
     font-size: 30px;
     padding-top: 30px;
@@ -428,8 +431,6 @@ footer{
     width: 130px;
   }
 }
-
-
 /* Media Query Mobile*/
 @media only screen and (max-width: 575px) {
   body{
@@ -455,6 +456,7 @@ footer{
     height: 3px;
     background-color: black;
     position: absolute;
+    transition: all cubic-bezier(0.26,0.1,0.27,1.55) 0.35s;
   }
   .top{
     top: 46%;
@@ -465,6 +467,23 @@ footer{
   .bottom{
     bottom: 13%;
   }
+  .navbar-toggler.close .top{
+    transform: translate(300px);
+    width: 140px;
+    opacity: 0;
+    transition: .25s ease-in-out
+
+  }
+  .navbar-toggler.close .bottom{
+    transform: rotate(-45deg);
+    top: 48%;
+
+
+  }
+  .navbar-toggler.close .middle{
+    transform: rotate(45deg);
+    top: 48%;
+  }
   .navbar{
     top: 0px;
     right: 0px;
@@ -472,6 +491,14 @@ footer{
   }
   .navbar-toggler:focus{
     outline: none;
+  }
+  .nav-item.mobile{
+    display: inline-block;
+    position: inherit;
+  }
+  .nav-item{
+    display: none;
+    position: absolute;
   }
   .nav-item {
     margin-right: 0;
@@ -483,6 +510,9 @@ footer{
   }
   .nav-link:hover {
     color: white !important;
+  }
+  ul.navbar-nav{
+    text-align: center;
   }
   /* Home Section */
   #bar{

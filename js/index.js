@@ -1,3 +1,4 @@
+/* jshint esversion: 8 */
 $(document).ready(function(){
 // nav link shadow
   $('.navbar-nav').on('click','li', function(){

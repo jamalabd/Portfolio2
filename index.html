@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-sale=1">
+    <meta name="viewport" content="width=device-width">
     <!-- Style Links -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
@@ -145,41 +145,86 @@
               <div class="pr project1">
                 <div class="popup p1">
                   <h2>Project</h2>
-                  <button type="button" class="viewMore">View More</button>
+                  <button type="button" class="viewMore vm1">View More</button>
                 </div>
               </div>
               <div class="pr project2">
                 <div class="popup p2">
-                  <h2>Project</h2>
-                  <button type="button" class="viewMore">View More</button>
+                  <h2>Budgety</h2>
+                  <button type="button" class="viewMore vm2">View More</button>
                 </div>
               </div>
               <div class="pr project3">
                 <div class="popup p3">
                   <h2>Project</h2>
-                  <button type="button" class="viewMore">View More</button>
+                  <button type="button" class="viewMore vm3">View More</button>
                 </div>
               </div>
               <div class="pr project4">
                 <div class="popup p4">
                   <h2>Project</h2>
-                  <button type="button" class="viewMore">View More</button>
+                  <button type="button" class="viewMore vm4">View More</button>
                 </div>
               </div>
               <div class="pr project5">
                 <div class="popup p5">
                   <h2>Project</h2>
-                  <button type="button" class="viewMore">View More</button>
+                  <button type="button" class="viewMore vm5">View More</button>
                 </div>
               </div>
               <div class="pr project6">
                 <div class="popup p6">
                   <h2>Project</h2>
-                  <button type="button" class="viewMore">View More</button>
+                  <button type="button" class="viewMore vm6">View More</button>
                 </div>
               </div>
           </div>
           <!-- End of Css Grid Wrapper -->
+          <!-- View More Pop Up -->
+          <div class="windows">
+          <!-- <div class="viewMoreWindow window1">
+            <img class="projectImg" src="" alt="">
+            <h5 class="projectTitle"></h5>
+            <p class="description"></p>
+            <button class="viewSight" type="button" name="button"></button>
+            <button class="viewCode" type="button" name="button"></button>
+          </div>
+          <div class="viewMoreWindow window2">
+            <img class="projectImg" src="" alt="">
+            <h5 class="projectTitle"></h5>
+            <p class="description"></p>
+            <button class="viewSight" type="button" name="button"></button>
+            <button class="viewCode" type="button" name="button"></button>
+          </div>
+          <div class="viewMoreWindow window3">
+            <img class="projectImg" src="" alt="">
+            <h5 class="projectTitle"></h5>
+            <p class="description"></p>
+            <button class="viewSight" type="button" name="button"></button>
+            <button class="viewCode" type="button" name="button"></button>
+          </div>
+          <div class="viewMoreWindow window4">
+            <img class="projectImg" src="" alt="">
+            <h5 class="projectTitle"></h5>
+            <p class="description"></p>
+            <button class="viewSight" type="button" name="button"></button>
+            <button class="viewCode" type="button" name="button"></button>
+          </div>
+          <div class="viewMoreWindow window5">
+            <img class="projectImg" src="" alt="">
+            <h5 class="projectTitle"></h5>
+            <p class="description"></p>
+            <button class="viewSight" type="button" name="button"></button>
+            <button class="viewCode" type="button" name="button"></button>
+          </div>
+          <div class="viewMoreWindow window6">
+            <img class="projectImg" src="" alt="">
+            <h5 class="projectTitle"></h5>
+            <p class="description"></p>
+            <button class="viewSight" type="button" name="button"></button>
+            <button class="viewCode" type="button" name="button"></button>
+          </div> -->
+        </div>
         </div>
       </section>
       <!-- End of Projects Section -->
@@ -196,11 +241,11 @@
         </a>
         <!-- Contact Form -->
         <div class="info">
-          <form class="formContact" action="index.js" method="get" role="form">
+          <form class="formContact" method="POST" role="form" action="https://formspree.io/jamalabdul47@gmail.com">
             <input class="forms" type="email" name="email" id="email" placeholder="Email" value="">
             <input class="forms" type="text" name="name" id="name" placeholder="Name" value="">
             <input class="forms" type="tel" name="phone" id="phone" placeholder="Phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" value="">
-            <textarea class="forms" name="message" rows="8" cols="80" placeholder="Message"></textarea>
+            <textarea class="forms" name="message" rows="8" id="message" cols="80" placeholder="Message"></textarea>
             <button  class="forms resume" type="button" name="resume" id="resume"><a href="#" Download="">Download Resume</a></button>
             <button class="forms" type="submit" name="submit" id="submit-btn">Submit</button>
           </form>
@@ -212,9 +257,11 @@
       </footer>
     </div>
     <!-- JavaScript Links -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/additional-methods.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="./js/index.js"></script>
   </body>

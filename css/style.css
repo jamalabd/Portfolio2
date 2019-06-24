@@ -288,6 +288,17 @@ button.viewMore:hover{
   width: 170px;
   color: #308dff;
 }
+.viewMoreWindow{
+  display: block;
+  position: absolute;
+  background-color: #fff;
+  width: 800px;
+  height: 500px;
+  left: 22%;
+  top:258%;
+  z-index: 800;
+  box-shadow: 5px 14px 28px rgba(0,0,0,.30);
+}
 /* Contact Section */
 #contact{
   text-align: center;
@@ -595,7 +606,7 @@ footer{
     padding: 3px 9px;
   }
   textarea.forms{
-    width: 70%;
+    width: 65%;
     height:120px;
     resize: none;
   }
@@ -613,7 +624,7 @@ footer{
     width: 120px;
   }
   #submit-btn:hover{
-    background-color: grey;
+    background-color: #fff;
     border: none;
     color: #fff;
     border: 2px solid transparent;
@@ -711,8 +722,6 @@ footer{
     padding-top: 2px;
     width: 130px;
   }
-
-
 
 
 

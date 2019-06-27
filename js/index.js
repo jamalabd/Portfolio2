@@ -70,11 +70,10 @@ document.addEvenetListener('click', e =>{
       imgAlt = 'jumpstart';
       h5 = jjjjj;
       p = jjjjj;
-      btnSight = file:///Users/jamalabdul-majid/Documents/Projects/jumpstart/index.html#;
+      btnSight = 3;
 
 
     }else if (e.target.classList.matches('budgety')){
-gsdfgsf
 
     }
 

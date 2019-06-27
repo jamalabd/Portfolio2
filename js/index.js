@@ -25,7 +25,6 @@ $(document).ready(function(){
 
   // contact section forms and buttons
 
-  // variables
 
   const status = $('.status');
   status.innerHTML="";
@@ -57,22 +56,47 @@ $(document).ready(function(){
   });
 
 
-  const popUp=()=>{
-    markup =
-    `
+});
+
+
+// variables
+let img, imgName, h5, p, btnSight, btnCode;
+
+
+document.addEvenetListener('click', e =>{
+
+    if (e.target.classList.matches('jumpstart')) {
+      img = '../resources/jumpstart.png';
+      imgAlt = 'jumpstart';
+      h5 = jjjjj;
+      p = jjjjj;
+      btnSight = file:///Users/jamalabdul-majid/Documents/Projects/jumpstart/index.html#;
+
+
+    }else if (e.target.classList.matches('budgety')){
+gsdfgsf
+
+    }
+
+
+
+});
+
+
+
+const popUp=()=>{
+  markup =
+  `
     <div class="viewMoreWindow window1">
-      <img class="projectImg" src="" alt="">
+      <img class="projectImg" src="${img}" alt="${imgAlt}">
       <h5 class="projectTitle"></h5>
       <p class="description"></p>
       <button class="viewSight" type="button" name="button"></button>
       <button class="viewCode" type="button" name="button"></button>
     </div>
-    `;
+  `;
 
-    document.querySelector('.windows').insertAdjacentHTML('beforeend', markup);
-  };
+  document.querySelector('.windows').insertAdjacentHTML('beforeend', markup);
+};
 
-
-popUp();
-
-});
+ popUp();
